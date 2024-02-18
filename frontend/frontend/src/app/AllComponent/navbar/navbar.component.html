@@ -1,0 +1,86 @@
+<!-- navbar.component.html -->
+<style>
+
+    img {
+                margin-left: 20px;
+                width: 70%;
+                max-width: 58px; /* Adjust as needed */
+                height: auto;
+            }
+            
+       
+            nav {
+                font-weight: 500;
+                background-color: transparent !important; /* Setting transparent background */
+                box-shadow: none; 
+                font-weight: 500;
+            }
+    
+          
+            nav li a {
+              font-weight: bold;
+              font-size: 18px;
+                transition: all 0.3s ease; 
+                
+            }
+    
+            /* Hover state styles */
+            nav li a:hover {
+                background-color: linen;
+                border-radius: 20%;
+                transform: scale(1.1); /* Example transformation - scales the element */
+            }
+           
+    </style>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img [src]="imageUrl" alt="Your Image"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </a>
+          <h2> <i>RightHire.com</i> </h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#" routerLink="/aboutus">AboutUs</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" href="#" routerLink="/aboutus">Services</a>
+              </li>
+
+              <li *ngIf="isCandidate" class="nav-item dashboard-links">
+                <a class="nav-link active" href="#" routerLink="/jobinternship">Candidate-Dashboard</a>
+               
+              </li>
+
+              <li *ngIf="isHR" class="nav-item dashboard-links">
+                <a class="nav-link active" href="#" routerLink="/Hr-Dash">HR-Dashboard</a>
+               
+              </li>
+
+              
+
+    
+              <li *ngIf="isCandidate" class="nav-item">
+                <a class="nav-link active" href="#" routerLink="/profile">Profile</a>
+              </li>
+
+              <li *ngIf="isLoggedIn" class="nav-item">
+                <a href="/login" class="logout-btn">Logout</a>
+              </li>
+
+              <li *ngIf="!isLoggedIn" class="nav-item">
+                <a class="nav-link active" href="#" routerLink="/register">Register</a>
+              </li>
+              <li *ngIf="!isLoggedIn" class="nav-item">
+                <a class="nav-link active" href="#" routerLink="/login">Login</a>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>

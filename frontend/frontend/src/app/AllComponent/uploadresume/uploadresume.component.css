@@ -1,0 +1,45 @@
+/* resumeupload.component.css */
+
+.resumecontainer {
+    background: url('background1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h5, h6 {
+    margin: 10px;
+}
+
+input[type=file] {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover,
+input[type=file]:hover {
+    background-color: darkblue;
+}

@@ -1,0 +1,11 @@
+var express = require('express');
+var HRController = require('../src/student/HRController');
+const router = express.Router();
+router.route('/student/loginhr').post(HRController.loginHRControllerFn);
+router.route('/student/createhr').post(HRController.createHRControllerFn);
+router.route('/student/hr/:email').get(HRController.gethr);
+router.route('/student/hr/jobdetails').post(HRController.createjobControllerFn);
+router.route('/student/job/:email').get(HRController.getjob);
+router.route('/student/job/:id').delete(HRController.deleteJob);
+router.route('/:appliedCompany').get(HRController.getStudentByAppliedCompany);
+module.exports = router;

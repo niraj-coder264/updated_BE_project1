@@ -1,0 +1,18 @@
+
+<div class="container">
+  <h2>Welcome <i>{{ userProfile?.name }}</i> to your profile</h2>
+  <div *ngIf="userProfile" class="container profile-section animated">
+    <p><strong>Name:</strong> {{ userProfile?.name }}</p>
+    <p><strong>Email:</strong> {{ userProfile?.email }}</p>
+    <p><strong>Registration:</strong> {{ userProfile?.registerAs }}</p>
+    <p><strong>College/Company Name:</strong> {{ userProfile?.collegeOrCompanyName }}</p>
+
+    <!-- Option to upload resume for candidates -->
+    <div *ngIf="userProfile?.registerAs === 'candidate'" class="resume-section">
+      <label for="resumeUpload" class="upload-label">Upload Resume:</label>
+      <input type="file" id="resumeUpload" (change)="onResumeUpload($event)" class="upload-input">
+      <br><br>
+      <button class="submit-btn" (click)="uploadResume()">Submit Resume</button>
+    </div>
+  </div>
+</div>

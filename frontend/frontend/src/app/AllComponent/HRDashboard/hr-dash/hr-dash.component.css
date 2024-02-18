@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Updated navbar styles */
+.navbar{
+    background-color: lightblue;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.navbar ul a{
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 45px;
+    color: black;
+}
+
+.navbar ul a:hover{
+  color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container button {
+    background-image: linear-gradient(to right, cyan, magenta);
+    color: white;
+    font: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.job-details, .seekers-details {
+    text-align: center;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  
+  /**/
+
+  #seekers-details-table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#seekers-details-table th, #seekers-details-table td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#seekers-details-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#seekers-details-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#seekers-details-table .job-details, #seekers-details-table .seekers-details {
+    text-align: center;
+}

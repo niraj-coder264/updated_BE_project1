@@ -1,0 +1,23 @@
+<form class="job-form">
+    <h3><strong>Post Job</strong></h3>
+    <p><strong>Please fill in this form to post a job.</strong></p>
+    <label for="job_role">Job Role</label>
+    <input type="text" id="job_role" name="job_role" [(ngModel)]="jobRole">
+
+    <label for="experience">Experience</label>
+    <input type="text" id="experience" name="experience" [(ngModel)]="experience">
+
+    <label for="job_type">Job Type</label>
+    <input type="text" id="job_type" name="job_type" [(ngModel)]="jobType">
+
+    <label for="job_location">Job Location</label>
+    <input type="text" id="job_location" name="job_location" [(ngModel)]="jobLocation">
+
+    <label for="post_date">Last Date</label>
+    <input type="date" id="post_date" name="post_date" [(ngModel)]="lastDate">
+
+    <label for="resume">Attach Resume (txt file)</label>
+    <input type="file" id="resume" name="resume" (change)="onFileSelected($event)">
+
+    <button type="submit" (click)="postJob()">Post Job</button>
+</form>

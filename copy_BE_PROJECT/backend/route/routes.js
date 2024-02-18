@@ -1,0 +1,11 @@
+var express = require('express');
+var studentController = require('../src/student/studentController');
+const { route } = require('./routeshr');
+const router = express.Router();
+router.route('/student/login').post(studentController.loginUserControllerFn);
+router.route('/student/create').post(studentController.createStudentControllerFn);
+router.route('/student/:email').get(studentController.getstudent);
+router.route('student/update-resume').post(studentController.updateResume);
+router.route('/alljob').get(studentController.getalljob);
+router.route("/student/appliedjob").post(studentController.createAppliedJobControllerFn);
+module.exports = router;

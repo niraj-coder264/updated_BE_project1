@@ -1,0 +1,18 @@
+<!-- resumeupload.component.html -->
+
+<div class="resumecontainer">
+    <br><br><br><br>
+    <h2>Hello, <strong>{{name}}</strong> </h2> 
+
+    <h5> 
+        Upload your resume here:- 
+    </h5> 
+    <form  enctype="multipart/form-data"> 
+        <label for="myfile">Select a file:</label>&nbsp;
+        <input type="file" id="myfile" name="myfile" /> 
+        <br /><br /> 
+        <button type="submit" (click)="upload()" >Upload Resume</button> 
+    </form> 
+    <br>
+    <h6>Only .pdf or .doc is allowed</h6>
+</div>

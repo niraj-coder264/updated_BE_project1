@@ -1,0 +1,18 @@
+<br>
+<div class="registration-container">
+  <h2> <strong>Register</strong></h2>
+  <form >
+    <div class="input-group">
+      <input type="text" placeholder="Name" name="name" [(ngModel)]="name" required class="circular-input">
+      <input type="email" placeholder="Email" name="email" [(ngModel)]="email" required class="circular-input">
+      <input type="password" placeholder="Password" name="password" [(ngModel)]="password" required class="circular-input">
+      <input type="text" placeholder="Company/College Name" name="collegeOrCompanyName" [(ngModel)]="collegeOrCompanyName" required class="circular-input">
+    </div>
+    <div class="radio-group">
+      <label>Register as: </label>
+      <label><input type="radio" name="registerAs" value="candidate" [(ngModel)]="registerAs">Student</label>
+      <label><input type="radio" name="registerAs" value="HR" [(ngModel)]="registerAs">HR</label>
+    </div>
+    <button type="submit" (click)="save()" class="submit-btn">Submit</button>
+  </form>
+</div>

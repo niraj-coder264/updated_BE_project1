@@ -1,0 +1,11 @@
+<br>
+<div class="login-container">
+    <h2> <strong> Login </strong></h2>
+    <form >
+      <div class="input-group">
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="email" required class="circular-input">
+        <input type="password" placeholder="Password" name="password" [(ngModel)]="password" required class="circular-input">
+      </div>
+      <button type="submit" (click)="save()" class="submit-btn">Login</button>
+    </form>
+  </div>

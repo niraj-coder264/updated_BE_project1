@@ -1,0 +1,65 @@
+/* post-job.component.css */
+/* post-job.component.css */
+/* post-job.component.css */
+.job-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 12px;
+    margin-top: -14px;
+    background-color: #dabcff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0.0, 0.0, 0.0, 0.2);
+}
+
+input[type=text],
+input[type=date]{
+    border: none;
+    background: #f1f1f1;
+    height: 25px; /* Reduced height */
+    font-size: 14px; /* Smaller font size */
+    padding-left: 20px; /* Reduced padding */
+    width: 70%;
+    margin-left: 6rem;
+}
+
+input[type=file]{
+    height: 25px; /* Reduced height */
+    font-size: 14px; /* Smaller font size */
+    padding-left: 20px; /* Reduced padding */
+    margin-left: 5rem;
+}
+
+input[type=text]:focus,
+input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+    border-radius: 50px;
+}
+
+.job-form button {
+    background-color: #4CAF50;
+    font-size: 16px; /* Smaller font size */
+    height: 30px; /* Reduced height */
+    margin-top: 10px; /* Reduced margin */
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+form label {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-left: 6rem;
+}
+
+form p {
+    font-size: 18px;
+    text-align: center;
+}
+
+form h3 {
+    text-align: center;
+    font-size: 25px;
+}
